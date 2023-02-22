@@ -11,6 +11,7 @@ export default defineConfig({
     },
   },
   build: {
+    sourcemap: true,
     cssCodeSplit: true,
     lib: {
       entry: resolve(__dirname, "src/index.ts"),
@@ -21,6 +22,7 @@ export default defineConfig({
     rollupOptions: {
       external: ["vue"],
       output: {
+        sourcemap: true,
         esModule: true,
         preserveModules: true,
         globals: {
