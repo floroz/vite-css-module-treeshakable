@@ -1,15 +1,15 @@
 {
   "name": "css-modules-treeshaking",
-  "version": "0.0.0",
-  "private": true,
+  "version": "0.0.1",
+  "private": false,
   "type": "module",
   "files": [
     "dist"
   ],
-  "module": "./dist/index.js",
+  "module": "./dist/index.es.js",
   "exports": {
     ".": {
-      "import": "./dist/index.js"
+      "import": "./dist/index.es.js"
     }
   },
   "sideEffects": [
@@ -23,8 +23,8 @@
     "type-check": "vue-tsc --noEmit",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
   },
-  "dependencies": {
-    "vue": "^3.2.45"
+  "peerDependencies": {
+    "vue": ">=3"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.1.4",
