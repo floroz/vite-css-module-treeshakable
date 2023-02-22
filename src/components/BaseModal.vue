@@ -2,8 +2,10 @@
   <div :class="$style.modal">Test</div>
 </template>
 
-<style module>
+<style module lang="scss">
+@import "../variables";
 .modal {
   color: blue;
+  background-color: $test;
 }
 </style>
