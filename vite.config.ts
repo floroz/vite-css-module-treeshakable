@@ -12,7 +12,7 @@ export default defineConfig({
     },
   },
   build: {
-    sourcemap: true,
+    // sourcemap: true,
     cssCodeSplit: true,
     lib: {
       entry: resolve(__dirname, "src/index.ts"),

@@ -1,6 +1,6 @@
 @import '../variables';
 
-.box {
+.bem-box {
   color: $test;
   @extend %btn;
 }

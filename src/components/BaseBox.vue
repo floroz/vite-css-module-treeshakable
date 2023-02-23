@@ -1,7 +1,7 @@
 <template>
-  <div :class="styles.box"></div>
+  <div class="bem-box"></div>
 </template>
 
 <script setup lang="ts">
-import styles from "./BaseBox.module.scss";
+import "./BaseBox.scss";
 </script>

@@ -1,12 +1,12 @@
 <template>
-  <div :class="$style.modal">Test</div>
+  <div class="bem-modal">Test</div>
 </template>
 
-<style module lang="scss">
+<style lang="scss">
 @import "../variables";
-.modal {
-  color: blue;
-  background-color: $test;
+
+.bem-modal {
   @extend %btn;
+  background-color: $test;
 }
 </style>
