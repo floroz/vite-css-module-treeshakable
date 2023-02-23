@@ -7,5 +7,6 @@
 .modal {
   color: blue;
   background-color: $test;
+  @extend %btn;
 }
 </style>
