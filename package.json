@@ -1,6 +1,6 @@
 {
   "name": "css-modules-treeshaking",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "private": false,
   "type": "module",
   "files": [
@@ -22,7 +22,8 @@
     "preview": "vite preview",
     "build-only": "vite build",
     "type-check": "vue-tsc --noEmit",
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
+     "analyze": "npx vite-bundle-visualizer"
   },
   "peerDependencies": {
     "vue": ">=3"
