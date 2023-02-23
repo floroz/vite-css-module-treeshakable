@@ -1,12 +1,5 @@
 <template>
-  <div :class="$style.modal">Test</div>
+  <div class="text-ellipsis bg-red-500">Test</div>
 </template>
 
-<style module lang="scss">
-@import "../variables";
-.modal {
-  color: blue;
-  background-color: $test;
-  @extend %btn;
-}
-</style>
+<style></style>

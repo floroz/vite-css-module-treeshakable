@@ -1,6 +1,3 @@
-@import '../variables';
-
 .box {
-  color: $test;
-  @extend %btn;
+  @apply bg-blue-800 text-6xl;
 }
