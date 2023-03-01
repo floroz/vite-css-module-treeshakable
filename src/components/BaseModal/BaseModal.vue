@@ -3,7 +3,7 @@
 </template>
 
 <style module lang="scss">
-@import "../variables";
+@import "../../variables";
 .modal {
   color: blue;
   background-color: $test;
