@@ -2,12 +2,26 @@ import { fileURLToPath, URL } from "node:url";
 import { resolve } from "node:path";
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
-import dts from "vite-plugin-dts";
+// import dts from "vite-plugin-dts";
 import tailwind from "tailwindcss";
 import autoprefixer from "autoprefixer";
+import typescript2 from "rollup-plugin-typescript2";
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue(), dts()],
+  plugins: [
+    vue(),
+    typescript2({
+      check: false,
+      tsconfigOverride: {
+        compilerOptions: {
+          sourceMap: true,
+          declaration: true,
+          declarationMap: true,
+        },
+      },
+      exclude: ["vite.config.ts"],
+    }),
+  ],
   resolve: {
     alias: {
       "@": fileURLToPath(new URL("./src", import.meta.url)),
@@ -19,7 +33,6 @@ export default defineConfig({
     },
   },
   build: {
-    sourcemap: true,
     cssCodeSplit: true,
     lib: {
       entry: resolve(__dirname, "src/index.ts"),
@@ -30,9 +43,9 @@ export default defineConfig({
     rollupOptions: {
       external: ["vue"],
       output: {
-        sourcemap: true,
-        esModule: true,
         preserveModules: true,
+        esModule: true,
+        exports: "named",
         globals: {
           vue: "Vue",
         },
