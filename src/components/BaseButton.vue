@@ -1,13 +1,9 @@
 <template>
-  <button :class="styles.btn">Test</button>
+  <button :class="$style.button">Test</button>
 </template>
 
-<script setup lang="ts">
-import styles from "./BaseButton.module.css";
-
-type Props = {
-  test: string;
-};
-
-defineProps<Props>();
-</script>
+<style module>
+.button {
+  @apply font-bold;
+}
+</style>
