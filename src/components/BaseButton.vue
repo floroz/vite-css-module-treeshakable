@@ -1,11 +1,9 @@
 <template>
-  <button class="text-green-600 font-bold">Test</button>
+  <button :class="$style.button">Test</button>
 </template>
 
-<script setup lang="ts">
-type Props = {
-  test: string;
-};
-
-defineProps<Props>();
-</script>
+<style module>
+.button {
+  @apply font-bold;
+}
+</style>
