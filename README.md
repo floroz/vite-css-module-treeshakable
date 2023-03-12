@@ -12,7 +12,7 @@ We would like to present our findings to the community before taking a final dec
 
 Our team has inherited a Component Library built using Vue 3, Vite and Tailwind CSS. The library is in an `alpha` state and has no clients yet.
 
-- [Reproduction repository](https://github.com/floroz/vite-css-module-treeshakable/tree/tailwind): `git switch tailwind`
+- [Reproduction repository](https://github.com/floroz/vite-css-module-treeshakable/tree/tailwind)
 
 - The final output of the tailwind build is called `base.css`
 
