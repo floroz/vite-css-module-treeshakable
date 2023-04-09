@@ -1,2 +1,17 @@
 /* eslint-env node */
-module.exports = {};
+module.exports = {
+  plugins: [
+    require("autoprefixer"),
+    require("cssnano")({
+      preset: [
+        "default",
+        {
+          mergeRules: true,
+          discardComments: {
+            removeAll: true,
+          },
+        },
+      ],
+    }),
+  ],
+};

@@ -1,13 +1,12 @@
 <template>
-  <button :class="styles.btn">Test</button>
+  <button class="btn">Test</button>
 </template>
 
-<script setup lang="ts">
-import styles from "./BaseButton.module.css";
+<style lang="scss">
+@use "../../styles/placeholders";
 
-type Props = {
-  test: string;
-};
-
-defineProps<Props>();
-</script>
+.btn {
+  @extend %flex-center;
+  color: yellow;
+}
+</style>

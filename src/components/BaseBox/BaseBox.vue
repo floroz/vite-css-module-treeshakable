@@ -1,7 +1,12 @@
 <template>
-  <div :class="styles.box"></div>
+  <div class="box"></div>
 </template>
 
-<script setup lang="ts">
-import styles from "./BaseBox.module.scss";
-</script>
+<style lang="scss">
+@use "../../styles/placeholders";
+
+.box {
+  @extend %flex-center;
+  color: blue;
+}
+</style>

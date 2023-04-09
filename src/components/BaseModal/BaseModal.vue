@@ -1,11 +1,12 @@
 <template>
-  <div :class="$style.modal">Test</div>
+  <div class="modal">Test</div>
 </template>
 
-<style module lang="scss">
-@import "../../variables";
+<style lang="scss">
+@use "../../styles/placeholders";
+
 .modal {
-  color: blue;
-  background-color: $test;
+  @extend %flex-center;
+  color: red;
 }
 </style>
