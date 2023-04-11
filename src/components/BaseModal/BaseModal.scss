@@ -1,0 +1,6 @@
+@use "../../styles/placeholders";
+
+.modal {
+  @extend %flex-center;
+  color: red;
+}

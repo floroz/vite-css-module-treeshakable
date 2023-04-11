@@ -2,11 +2,6 @@
   <button class="btn">Test</button>
 </template>
 
-<style lang="scss">
-@use "../../styles/placeholders";
-
-.btn {
-  @extend %flex-center;
-  color: yellow;
-}
-</style>
+<script setup lang="ts">
+import "./BaseButton.scss";
+</script>

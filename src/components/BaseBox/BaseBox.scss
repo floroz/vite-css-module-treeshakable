@@ -1,0 +1,6 @@
+@use "../../styles/placeholders";
+
+.box {
+  @extend %flex-center;
+  color: blue;
+}
